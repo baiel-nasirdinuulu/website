@@ -1,0 +1,498 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth; }
+
+.header {
+  background-image: url("../img/mediamodifier-elbKS4DY21g-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh; }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.topbar {
+  padding: 14px 0;
+  border-bottom: 1px solid #72616192;
+  -webkit-box-shadow: 0px 5px 10px #b1b3b8;
+          box-shadow: 0px 5px 10px #b1b3b8;
+  position: relative;
+  z-index: 1; }
+  .topbar__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .topbar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .topbar::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#ededed), to(#5d5e5d));
+    background: linear-gradient(to right, #ededed, #5d5e5d);
+    z-index: -1; }
+  .topbar__link {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    padding-left: 35px; }
+    .topbar__link::before {
+      position: absolute;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png");
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 0;
+      top: 2px; }
+  .topbar__link2 {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    padding-left: 35px; }
+    .topbar__link2::before {
+      position: absolute;
+      background-image: url("https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/message-circle-blue-512.png");
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 0;
+      top: 2px; }
+
+.facebook {
+  background-image: url("https://icons-for-free.com/download-icon-color+facebook+icon-1320168272811213233_512.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px; }
+
+.instargamm {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Instagram.svg/2048px-Instagram.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px; }
+
+.twiter {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px; }
+
+.youtube {
+  background-image: url("https://flyclipart.com/thumbs/youtube-svg-icon-free-black-youtube-icon-1134782.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px; }
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.header__logo {
+  margin: 22px 0;
+  color: black;
+  font-size: 22px;
+  letter-spacing: 3px;
+  border-bottom: 5px solid red;
+  border-radius: 35px;
+  padding-bottom: 5px; }
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.header__link {
+  color: black;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  text-transform: uppercase; }
+  .header__link:hover {
+    color: red; }
+
+.intro__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.intro__fist-letter {
+  font-size: 12.5rem;
+  font-family: "Herr Von Muellerhoff", cursive;
+  letter-spacing: 2px;
+  line-height: 0.4;
+  font-weight: 100;
+  margin-bottom: 50px; }
+
+.intro__text {
+  font-size: 22px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  border-bottom: 5px solid #3a3535;
+  border-radius: 35px;
+  margin-bottom: 60px; }
+
+.intro__box {
+  text-align: center;
+  width: 140px;
+  margin: auto; }
+
+.intro__link {
+  padding: 15px 3px;
+  display: block;
+  margin-bottom: 50px;
+  border-radius: 35px 0 35px 0px;
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow: hidden; }
+  .intro__link::after {
+    content: "Click";
+    position: absolute;
+    border-radius: 35px 0 35px 0px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: brown;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .intro__link:hover::after {
+    top: 0; }
+
+.letter {
+  text-transform: capitalize;
+  font-size: 10.5rem;
+  font-family: "Herr Von Muellerhoff", cursive;
+  letter-spacing: 2px;
+  line-height: 0.4;
+  font-weight: 100; }
+
+.about__inner {
+  text-align: center;
+  margin-bottom: 80px; }
+
+.about__text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 24px;
+  text-transform: capitalize;
+  position: relative;
+  padding: 10px; }
+  .about__text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100px;
+    background-color: #514848;
+    height: 3px; }
+  .about__text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100px;
+    background-color: #605757;
+    height: 3px; }
+
+.about__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Courier New", Courier, monospace; }
+
+.about__img {
+  max-width: 500px;
+  margin-bottom: 40px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s; }
+
+.about__box2:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+.about__p {
+  max-width: 500px;
+  font-weight: 500; }
+
+.about__title {
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  position: relative;
+  text-transform: capitalize; }
+  .about__title::before {
+    position: absolute;
+    background-image: url("https://www.iconpacks.net/icons/2/free-rating-star-icon-2793-thumb.png");
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .about__title::after {
+    position: absolute;
+    background-image: url("https://www.iconpacks.net/icons/2/free-rating-star-icon-2793-thumb.png");
+    content: "";
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.photo {
+  background: -webkit-gradient(linear, left top, right top, from(blue), to(brown));
+  background: linear-gradient(to right, blue, brown);
+  padding-top: 100px;
+  border-radius: 10px;
+  padding-bottom: 80px;
+  background-position: center;
+  background-size: contain; }
+  .photo__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 40px 5px; }
+  .photo__text {
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 32px;
+    text-transform: capitalize;
+    position: relative;
+    padding: 10px; }
+    .photo__text::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 100px;
+      background-color: #d9cbcb;
+      height: 3px; }
+    .photo__text::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 100px;
+      background-color: #c5b7b7;
+      height: 3px; }
+  .photo__list {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative; }
+    .photo__list:hover .overlay {
+      top: 0; }
+
+.photo__list img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s; }
+
+.photo__list:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c32b2b), to(#064040));
+  background: linear-gradient(to top, #c32b2b, #064040);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0.8;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1; }
+
+.contact__text {
+  text-align: center;
+  margin: 40px;
+  font-size: 32px;
+  text-transform: capitalize;
+  position: relative;
+  padding: 10px; }
+  .contact__text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100px;
+    background-color: #514848;
+    height: 3px; }
+  .contact__text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100px;
+    background-color: #605757;
+    height: 3px; }
+
+.contact__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.contact__list {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.number {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png");
+  content: "";
+  width: 40px;
+  margin: 0px auto 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.email {
+  background-image: url("https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/message-circle-blue-512.png");
+  content: "";
+  width: 50px;
+  height: 50px;
+  margin: 0px auto 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.gis {
+  background-image: url("https://freesvg.org/img/ts-map-pin.png");
+  content: "";
+  width: 50px;
+  height: 50px;
+  margin: 0px auto 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.contact__list a {
+  color: black;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 500; }
+  .contact__list a:hover {
+    color: red; }

@@ -1,0 +1,88 @@
+.about {
+  &__inner {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-transform: capitalize;
+    position: relative;
+    padding: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 100px;
+      background-color: rgb(81, 72, 72);
+      height: 3px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 100px;
+      background-color: rgb(96, 87, 87);
+      height: 3px;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "Courier New", Courier, monospace;
+  }
+  &__img {
+    max-width: 500px;
+    margin-bottom: 40px;
+    transition: all 0.6s;
+  }
+  &__box2:hover img {
+    transform: scale(1.1);
+  }
+  &__p {
+    max-width: 500px;
+
+    font-weight: 500;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 50px;
+
+    position: relative;
+
+    text-transform: capitalize;
+    &::before {
+      position: absolute;
+      background-image: url("https://www.iconpacks.net/icons/2/free-rating-star-icon-2793-thumb.png");
+      content: "";
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &::after {
+      position: absolute;
+      background-image: url("https://www.iconpacks.net/icons/2/free-rating-star-icon-2793-thumb.png");
+      content: "";
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

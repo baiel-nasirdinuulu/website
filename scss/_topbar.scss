@@ -1,0 +1,103 @@
+.topbar {
+  padding: 14px 0;
+  border-bottom: 1px solid #72616192;
+  box-shadow: 0px 5px 10px rgb(177, 179, 184);
+
+  position: relative;
+  z-index: 1;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(237, 237, 237), rgb(93, 94, 93));
+    z-index: -1;
+  }
+  &__link {
+    color: $color-base;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    padding-left: 35px;
+    &::before {
+      position: absolute;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png");
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 0;
+      top: 2px;
+    }
+  }
+  &__link2 {
+    color: $color-base;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    padding-left: 35px;
+    &::before {
+      position: absolute;
+      background-image: url("https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/message-circle-blue-512.png");
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 0;
+      top: 2px;
+    }
+  }
+}
+
+.facebook {
+  background-image: url("https://icons-for-free.com/download-icon-color+facebook+icon-1320168272811213233_512.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+.instargamm {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Instagram.svg/2048px-Instagram.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+.twiter {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+.youtube {
+  background-image: url("https://flyclipart.com/thumbs/youtube-svg-icon-free-black-youtube-icon-1134782.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
