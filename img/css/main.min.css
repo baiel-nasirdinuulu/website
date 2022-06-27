@@ -181,7 +181,7 @@ a {
   transition: all 0.7s;
   text-transform: uppercase; }
   .header__link:hover {
-    color: red; }
+    color: #e3e137; }
 
 .intro__inner {
   position: absolute;
