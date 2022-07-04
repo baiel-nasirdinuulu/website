@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Herr+Von+Muellerhoff&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -69,9 +73,8 @@
             <div class="logo">
               <h2 class="header__logo">logo</h2>
             </div>
-            <div class="toggle"></div>
 
-            <ul class="header__menu">
+            <ul class="header__menu menuItem">
               <li class="header__list">
                 <a href="#home" class="header__link">home</a>
               </li>
@@ -85,13 +88,14 @@
                 <a href="#contact" class="header__link">contact</a>
               </li>
             </ul>
+            <label for="icon"> <i class="fas fa-bars"></i></label>
           </nav>
         </div>
       </div>
       <section class="intro">
         <div class="container">
           <div class="intro__inner">
-            <h1 class="intro__fist-letter">
+            <h1 class="intro__fist-letter ff">
               <span class="letter">w</span>elcom
             </h1>
             <h3 class="intro__text">Online Shopping in bishkek</h3>
@@ -135,53 +139,57 @@
           <div class="photo__inner">
             <h2 class="photo__text">clothes</h2>
             <ul class="photo__menu">
-              <li class="photo__list">
-                <div class="overlay"></div>
+              <li class="photo__list ani1">
                 <img
                   src="./img/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
                   alt=""
                 />
-              </li>
-              <li class="photo__list">
                 <div class="overlay"></div>
+              </li>
+              <li class="photo__list ani2">
                 <img
                   src="./img/mediamodifier-7cERndkOyDw-unsplash.jpg"
                   alt=""
                 />
-              </li>
-              <li class="photo__list">
                 <div class="overlay"></div>
+              </li>
+              <li class="photo__list ani3">
                 <img src="./img/nimble-made-N0ke5zChVBU-unsplash.jpg" alt="" />
-              </li>
-              <li class="photo__list">
                 <div class="overlay"></div>
+              </li>
+              <li class="photo__list ani4">
                 <img
                   src="./img/gez-xavier-mansfield-b34E1vh1tYU-unsplash.jpg"
                   alt=""
                 />
-              </li>
-              <li class="photo__list">
                 <div class="overlay"></div>
+              </li>
+              <li class="photo__list ani5">
                 <img src="./img/nimble-made-_PFanxhwe4o-unsplash.jpg" alt="" />
-              </li>
-              <li class="photo__list">
                 <div class="overlay"></div>
-                <img src="./img/nimble-made-BKYeLLB1OxI-unsplash.jpg" alt="" />
               </li>
-              <li class="photo__list">
+              <li class="photo__list ani6">
+                <img
+                  src="./img/nimble-made-BKYeLLB1OxI-unsplash.jpg"
+                  alt=""
+                  class="ani4"
+                />
                 <div class="overlay"></div>
+              </li>
+              <li class="photo__list ani7">
                 <img
                   src="./img/haryo-setyadi-acn5ERAeSb4-unsplash.jpg"
                   alt=""
                 />
-              </li>
-              <li class="photo__list">
                 <div class="overlay"></div>
+              </li>
+              <li class="photo__list ani8">
                 <img src="./img/zoe-NKjIT7u5nXE-unsplash.jpg" alt="" />
-              </li>
-              <li class="photo__list">
                 <div class="overlay"></div>
+              </li>
+              <li class="photo__list ani9">
                 <img src="./img/choi-sungwoo-4hWPlZcJ_Y8-unsplash.jpg" alt="" />
+                <div class="overlay"></div>
               </li>
             </ul>
           </div>
@@ -285,6 +293,16 @@
       </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script>
+      ScrollReveal().reveal(".ani1", { delay: 250 });
+      ScrollReveal().reveal(".ani2", { delay: 500 });
+      ScrollReveal().reveal(".ani3", { delay: 750 });
+      ScrollReveal().reveal(".ani4", { delay: 1000 });
+      ScrollReveal().reveal(".ani5", { delay: 125 });
+      ScrollReveal().reveal(".ani6", { delay: 1500 });
+      ScrollReveal().reveal(".ani7", { delay: 1750 });
+      ScrollReveal().reveal(".ani8", { delay: 2000 });
+      ScrollReveal().reveal(".ani9", { delay: 2250 });
+    </script>
   </body>
 </html>

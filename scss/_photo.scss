@@ -48,6 +48,7 @@
     height: 300px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
 
     &:hover .overlay {
       top: 0;
